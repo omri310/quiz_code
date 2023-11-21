@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif Arial;
+  font-size: large;
+  line-height: 2.5;
+  color: chartreuse;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  line-height: 2.5;
+  background-color: chocolate;
+  color: cornsilk;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+button.hover {
+  background-color: cyan;
+}
+
+/* quiz styles */
+.quiz {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.quiz-choices {
+  list-style: none;
+  padding-left: 2px;
+}
+
+.quiz-question {
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+.quiz-choices li {
+  margin-bottom: 20px;
+}
+
+.quiz-choices input[type="radio"] {
+  display: none;
+}
+
+.quiz-choices label {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.quiz-choices label::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 25px;
+  height: 25px;
+  border: 2px salmon
+}
+
+.quiz-choices input[type="radio"]:checked+label::before {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.quiz-timer {
+  margin-bottom: 30px;
+}
+
+.quiz-score {
+  margin-bottom: 30px;
+}
+
+.quiz-form {
+  display: none;
+}
+
+.quiz-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid aquamarine;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.quiz-form button[type="submit"] {
+  display: block;
+  margin: auto;
+}
